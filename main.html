@@ -12,7 +12,7 @@
       background: #f4f4f4;
       color: #333;
     }
-    header, nav, section, aside, footer {
+    header, nav, section, aside, footer, details {
       padding: 20px;
       margin: 10px;
       border-radius: 8px;
@@ -35,7 +35,7 @@
     nav a:hover {
       text-decoration: underline;
     }
-    section {
+    section, details {
       background: #fff;
     }
     aside {
@@ -55,27 +55,25 @@
   </header>
 
   <nav>
-    <!-- Nav links point to sections by ID -->
     <a href="#actor" id="nav-actor">Actors</a>
     <a href="#quote" id="nav-quote">Quotes</a>
-    <a href="#summary" id="nav-summary">Summary</a>
   </nav>
 
-  <!-- ✅ Summary section with ID -->
-  <section id="summary">
-    <h2>Summary</h2>
+  <!-- Changed section#summary into details/summary -->
+  <details open>
+    <summary>Summary</summary>
     <p>
       Inception is a science fiction thriller directed by Christopher Nolan. The film follows a skilled thief,
       Dom Cobb, who is an expert at stealing secrets from deep within the subconscious during the dream state.
       Cobb is offered a chance to have his criminal history erased in exchange for performing the impossible task
       of planting an idea into someone's mind — a process known as "inception."
     </p>
-  </section>
+  </details>
 
   <section id="actor">
     <h2>Actors</h2>
     <p>
-      The movie stars Leonardo DiCaprio as Dom Cobb, along with Joseph Gordon-Levitt, Elliot Page,
+      The movie stars Leonardo DiCaprio as Dom Cobb, along with Joseph Gordon-Levitt, Ellen Page,
       Tom Hardy, Ken Watanabe, Cillian Murphy, and Michael Caine. Each actor brings depth and complexity
       to the mind-bending story.
     </p>
@@ -90,8 +88,8 @@
 
   <aside>
     <h2>Movie Details</h2>
-    <p><strong>IMDb Rating:</strong> 8.8/10</p>
-    <p><strong>Release Date:</strong> July 16, 2010</p>
+    <p>IMDb Rating: 8.8/10</p>
+    <p>Release Date: July 16, 2010</p>
   </aside>
 
   <footer>
